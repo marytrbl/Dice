@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingTop="100dp"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="450dp"
+        android:layout_height="95dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="450dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/logo3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+        android:id="@+id/dice"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/dice1" />
+
+    </LinearLayout>
+
+    <Button
+        android:theme="@style/FlatButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/rollDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="roll"
+        android:fontFamily="@font/cooper"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="175dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
